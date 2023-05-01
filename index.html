@@ -16,21 +16,28 @@
 				</h1>
 			</div>
 
-			<form>
-				<input type="text" id="newTodo" placeholder="Enter new task" />
+			<form id="newTodoForm">
+				<input
+					type="text"
+					name="content"
+					id="content"
+					placeholder="Enter new task"
+				/>
 				<button type="submit" id="addTodoButton">Add</button>
 			</form>
 
-			<div class="todoList">
+			<div id="todoList">
 				<div class="todo">
-					<input type="radio" class="completeRadio" />
-					<input type="text" class="task" value="ToDo" readonly />
+					<input type="checkbox" class="completeRadio">
+				<div class="taskContent">
+						<input type="text" value="" readonly>
+				</div>
 					<div class="actions">
 						<button class="editButton">Edit</button>
 						<button class="deleteButton">Delete</button>
 					</div>
 				</div>
-			</div>
+
 		</div>
 	</body>
 	<script src="index.js"></script>
